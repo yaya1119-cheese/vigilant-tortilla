@@ -2,7 +2,7 @@ class Food:
     def calories(self):
         print("Calories for different foods")
     
-class Skibidi_slicers(Food):
+class piza(Food):
     def calories(self):
         print("285")
 
