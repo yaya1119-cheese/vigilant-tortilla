@@ -9,7 +9,6 @@ class Food:
 
 
 class Pizza(Food):
-    pass
 
 
     def get_calories(self):
@@ -17,7 +16,7 @@ class Pizza(Food):
 
 
 class Burger(Food):
-    pass
+
 
  
     def get_calories(self):
