@@ -1,14 +1,33 @@
+
 class Food:
-    def calories(self):
-        print("Calories for different foods")
-    
-class piza(Food):
-    def calories(self):
-        print("285")
+    def __init__(self, name, calories):
+        self._name = name            
+        self._calories = calories    
 
-class Barbacue_Bacon_Burger(Food):
-    def calories(self):
+    def get_calories(self):
+        return f"{self._name} has {self._calories} calories."
 
 
-        super().calories()
-        print("750")
+class Pizza(Food):
+    pass
+
+
+    def get_calories(self):
+        return f"{self._name} has {self._calories} calories."
+
+
+class Burger(Food):
+    pass
+
+ 
+    def get_calories(self):
+        return f"{self._name} has {self._calories} calories."
+
+
+
+pepperoni_pizza = Pizza("Pizza", 285)
+cheeseburger = Burger("Cheeseburger", 750)
+
+
+print(pepperoni_pizza.get_calories()) 
+print(cheeseburger.get_calories())   
