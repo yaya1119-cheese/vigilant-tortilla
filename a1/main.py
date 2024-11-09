@@ -5,8 +5,15 @@ class Food:
         self.calories = calories    
 
     def get_calories(self):
-        return f"{self.name} has {self.calories} calories."
+        return self.calories
 
+    def set_calories(self, calories):
+        self.calories = calories
+
+    
+    
+   
+        
 
 class Pizza(Food):
 
