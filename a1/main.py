@@ -1,18 +1,18 @@
 
 class Food:
     def __init__(self, name, calories):
-        self._name = name            
-        self._calories = calories    
+        self.name = name            
+        self.calories = calories    
 
     def get_calories(self):
-        return f"{self._name} has {self._calories} calories."
+        return f"{self.name} has {self.calories} calories."
 
 
 class Pizza(Food):
 
 
     def get_calories(self):
-        return f"{self._name} has {self._calories} calories."
+        return f"{self.name} has {self.calories} calories."
 
 
 class Burger(Food):
@@ -20,7 +20,7 @@ class Burger(Food):
 
  
     def get_calories(self):
-        return f"{self._name} has {self._calories} calories."
+        return f"{self.name} has {self.calories} calories."
 
 
 
